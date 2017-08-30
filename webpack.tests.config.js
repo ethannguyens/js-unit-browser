@@ -10,7 +10,7 @@ const configuration = {
   output: {
     filename: 'test.build.js',
     path: path.join(__dirname, 'tests/bundle'),
-    publicPath: `http://localhost:${port}/tests/bundle`
+    publicPath: `http://localhost:${port}/tests/bundle/`
   },
   module: {
     rules: [

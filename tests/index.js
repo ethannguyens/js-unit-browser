@@ -37,6 +37,6 @@ global.siteObj = {defaultLocale: "NOT-A-LOCALE"};
 global.window.Klarna = {Terms: {Invoice: spy(), Consent: spy()}};
 
 //Searching for test files and export it for webpack
-const context = require.context('../modules', true, /\.jsx?$/);
+const context = require.context('../modules', true, /.+\.test\.js?$/);
 context.keys().forEach(context);
 module.exports = context;
